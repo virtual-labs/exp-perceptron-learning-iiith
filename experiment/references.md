@@ -1,1 +1,1 @@
-### Link your references in here
+- B. Yegnanarayana, Artificial Neural Networks, New Delhi, India : Prentice-Hall of India, pg. 100, 1999.
