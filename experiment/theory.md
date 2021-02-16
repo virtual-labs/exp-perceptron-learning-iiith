@@ -1,11 +1,11 @@
 #### Structure of two-layer feedforward neural network
 
 A perceptron is a model of a biological neuron. The input to a perceptron is an M-dimensional vector, and each component/dimension of the vector is scaled by a weight. The sum of weighted inputs is computed and compared against a threshold. If the weighted sum exceeds the threshold, the output of the perceptron is '1'. Otherwise, the output of the perceptron is '-1' (or '0'). The output function of a perceptron is hard-limiting function. Thus the output of the perceptron is binary in nature. The following figure illustrates a perceptron.
-\
-\
+
+
 <img src="images/Perceptron.png">
-\
-\
+
+
 **Figure 1**: *Perceptron Model.*
 
 where M = number of the elements in the input vector
@@ -71,18 +71,18 @@ Convergence of weights and threshold value
 The following figures show the variation of threshold \( \theta \), and the weights \( w_1 \) and \(w_2\), as functions of the iteration index. The convergence of \( \theta, w_1 \) and \( w_2 \) can be noted. 
 
 <img src="images/thetaVsTime.jpg">
-\
-\
+
+
 **Figure 3**: *The variation in values of \(\theta\) with iterations as network reaches convergence.*
- \
- \
+
+
 <img src="images/w1VsTime.jpg">
-\
-\
+
+
 **Figure 4**: *The variation in values of weight \(w_1\) with iterations as network reaches convergence.*
-\
-\
+
+
 <img src="images/w2VsTime.jpg">
-\
-\
+
+
 **Figure 5**: *The variation in values of weight \(w_2\) with iterations as network reaches convergence.*
