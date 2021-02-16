@@ -1,4 +1,4 @@
-### Structure of two-layer feedforward neural network
+#### Structure of two-layer feedforward neural network
 
 A perceptron is a model of a biological neuron. The input to a perceptron is an M-dimensional vector, and each component/dimension of the vector is scaled by a weight. The sum of weighted inputs is computed and compared against a threshold. If the weighted sum exceeds the threshold, the output of the perceptron is '1'. Otherwise, the output of the perceptron is '-1' (or '0'). The output function of a perceptron is hard-limiting function. Thus the output of the perceptron is binary in nature. The following figure illustrates a perceptron.
 \
@@ -6,7 +6,7 @@ A perceptron is a model of a biological neuron. The input to a perceptron is an 
 <img src="images/Perceptron.png">
 \
 \
-**Figure 1**: *Perceptron Model.*0
+**Figure 1**: *Perceptron Model.*
 
 where M = number of the elements in the input vector
 
@@ -46,8 +46,8 @@ The term \( \eta \) denotes the learning rate, and can be set to a small value (
 This theorem states that the perceptron learning law converges to a final set of weight values in a finite number of steps, if the classes are linearly separable. The proof of this theorem first assumes that there exists a set of weights which can correctly classify the input vectors. Then, a bound is obtained on the number of steps used to arrive at the optimum set of weights. This can be illustrated by the figure below, where begining intially with a set of random weight, the decision boundary finally settles as a valid classifier in finite number of steps.
 
 <img src="images/perceptron_convergence.png">
-\
-\
+
+
 **Figure 2**: *Example to illustrate the perceptron convergence in pattern classification problem.*
 
 ### Illustration of perceptron learning for two-dimensional input
@@ -55,8 +55,8 @@ This theorem states that the perceptron learning law converges to a final set of
 Consider two linearly separable classes, where each class consists of two-dimensional input pattern vectors. An example of two-class classification problem is shown below. The input vectors belonging to each class are shown in different colours in the following figure. The line is defined by the equation \( w_1 x + w_2 y = \theta.\) The straight line is defined by the initial values of the weights and the threshold.
 
 <img src="images/perceptron_2class_1.jpg">
-\
-\
+
+
 **Figure 1**: *Initial weights and the classes to be separated.*
 
 
