@@ -1,1 +1,1 @@
-//Your JavaScript goes in here
+window.EXP_NAME = "perceptron";
