@@ -1,0 +1,13 @@
+
+/home/runner/work/exp-perceptron-learning-iiith/exp-perceptron-learning-iiith/experiment/simulation/js/utils.js
+    3:17  warning  '$' is not defined               no-undef
+   12:3   warning  '$' is not defined               no-undef
+   21:37  warning  'xhr' is defined but never used  no-unused-vars
+   28:27  warning  '$' is not defined               no-undef
+   76:7   warning  '$' is not defined               no-undef
+   78:10  warning  'success' is not defined         no-undef
+   94:5   warning  '$' is not defined               no-undef
+  102:1   warning  '$' is not defined               no-undef
+
+✖ 8 problems (0 errors, 8 warnings)
+

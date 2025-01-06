@@ -1,0 +1,5 @@
+- Select a problem type for generating two classes as 'Linearly separable' or 'Linearly inseparable'.
+- Choose for a number of samples per class and number of iterations the perceptron network must go through.
+- Choose a step size to move over the number of iterations for display of results for the perceptron network.
+- Intialize the perceptron network by clicking on the 'Init perceptron' button.
+- Click on button for display of results according to the given step size.
