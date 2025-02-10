@@ -1,4 +1,3 @@
-window.SERVER = "svc-test.vlabs.ac.in/octave-ann";
 
 function submitForm() {
   const $form = $('form[name="myform"]');
@@ -8,9 +7,10 @@ function submitForm() {
   }, {});
 
   if (window.extraArgs) args = { ...args, ...window.extraArgs() };
+  const SERVER = window.vlabsConfig.service['VLAB_SVC_OCTAVE_ANN'];
 
   $.ajax({
-    url: SERVER + "/exp-" + window.EXP_NAME,
+    url: SERVER.url + "/exp-" + window.EXP_NAME,
     type: "POST",
     headers: {
       token: localStorage.getItem("token"),
@@ -18,7 +18,7 @@ function submitForm() {
     dataType: "json",
     data: JSON.stringify(args),
     contentType: "application/json",
-    success: function (data, status, xhr) {
+    success: function(data, status, xhr) {
       if (status === "success") {
         if (data.error) console.error(data.error);
         else {
@@ -44,7 +44,7 @@ function submitForm() {
         }
       }
     },
-    error: function (err) {
+    error: function(err) {
       console.log(err);
     },
   });
@@ -70,11 +70,12 @@ function appendOptions(elm, list) {
 }
 
 function onload() {
+  const SERVER = window.vlabsConfig.service['VLAB_SVC_OCTAVE_ANN'];
   if (document.readyState === "complete") {
     if (!localStorage.getItem("token")) {
       $.get(
-        `${SERVER}/get_token`,
-        (success = function (data) {
+        `${SERVER.url}/get_token`,
+        (success = function(data) {
           localStorage.setItem("token", data);
         })
       );
